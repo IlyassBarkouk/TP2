@@ -1,12 +1,13 @@
-# 🗳️ Questions Admin Panel
+# 🗳️ Application de Présentation multi-surface en React
 
-Une application React qui permet aux administrateurs d'ajouter des questions personnalisées à des événements (position, taille, couleur, anonymat...).
+Une application React qui permet d'ajouter des questions personnalisées à des événements (position, taille, couleur, anonymat...).
 
 ## 🚀 Fonctionnalités
 
 - Ajout de questions à un événement
 - Personnalisation des questions (auteur, couleur, taille, position)
 - Option pour poser une question de manière anonyme
+- Option chez l'admin pour supprimer les questions
 - Navigation entre les événements
 - Gestion via Redux
 
@@ -17,7 +18,7 @@ Une application React qui permet aux administrateurs d'ajouter des questions per
 ### 1. Cloner le projet
 
           git clone https://github.com/ProGitMounir/TP2_TIW8.git
-          cd TP2_TIW8
+          cd TP2
 
 ### 2. Installer les dépendances
       cd server
