@@ -17,7 +17,7 @@ Une application React qui permet aux administrateurs d'ajouter des questions per
 ### 1. Cloner le projet
 
           git clone https://github.com/ProGitMounir/TP2_TIW8.git
-          cd TP2_TIW8
+          cd TP2
 
 ### 2. Installer les dépendances
       cd server
