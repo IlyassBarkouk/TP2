@@ -17,7 +17,7 @@ Une application React qui permet d'ajouter des questions personnalisées à des 
 
 ### 1. Cloner le projet
 
-          git clone https://github.com/ProGitMounir/TP2_TIW8.git
+          git clone https://github.com/IlyassBarkouk/TP2.git
           cd TP2
 
 ### 2. Installer les dépendances
