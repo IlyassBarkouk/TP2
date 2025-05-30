@@ -66,9 +66,19 @@ export const eventsSlice = createSlice({
         event.questions.push(action.payload.question);
       }
     },
+    deleteQuestion: (
+      state,
+      action: PayloadAction<{ eventId: string; questionId: string }>
+    ) => {
+      const { eventId, questionId } = action.payload
+      const event = state.events.find((e) => e.id === eventId)
+      if (event) {
+        event.questions = event.questions.filter((q) => q.id !== questionId)
+      }
+    },
     
   },
 })
 
-export const { setCurrentEvent, upvoteQuestion, addQuestion } = eventsSlice.actions
+export const { setCurrentEvent, upvoteQuestion, addQuestion, deleteQuestion } = eventsSlice.actions
 export default eventsSlice.reducer
