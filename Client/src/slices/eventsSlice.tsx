@@ -9,35 +9,62 @@ interface EventsState {
 }
 
 const initialState: EventsState = {
-    events: [
-      {
-        id: '1',
-        title: 'Événement test',    // <- Ici doit y avoir un titre
-        questions: [
-          {
-            id: 'q1',
-            content: 'Question test 1',
-            upvotes: 0,
-            author: 'Alice',
-            color: '#FF0000',
-            position: { x: 0, y: 0 },
-            size: { width: 100, height: 50 },
-            createdAt: new Date().toISOString(),
-          },
-          {
-            id: 'q2',
-            content: 'Question test 2',
-            upvotes: 0,
-            author: 'Bob',
-            color: '#00FF00',
-            position: { x: 10, y: 20 },
-            size: { width: 120, height: 60 },
-            createdAt: new Date().toISOString(),
-          }
-        ]
-      }
-    ]
-  }
+  events: [
+    {
+      id: '1',
+      title: 'Événement test 1',
+      questions: [
+        {
+          id: 'q1',
+          content: 'Question test 1',
+          upvotes: 0,
+          author: 'Alice',
+          color: '#FF0000',
+          position: { x: 0, y: 0 },
+          size: { width: 100, height: 50 },
+          createdAt: new Date().toISOString(),
+        },
+        {
+          id: 'q2',
+          content: 'Question test 2',
+          upvotes: 0,
+          author: 'Bob',
+          color: '#00FF00',
+          position: { x: 10, y: 20 },
+          size: { width: 120, height: 60 },
+          createdAt: new Date().toISOString(),
+        }
+      ]
+    }, // <== ICI tu avais oublié cette virgule
+    {
+      id: '2',
+      title: 'Événement test 2',
+      questions: [
+        {
+          id: 'q1',
+          content: 'saluut',
+          upvotes: 0,
+          author: 'Alice',
+          color: '#FF0000',
+          position: { x: 0, y: 0 },
+          size: { width: 100, height: 50 },
+          createdAt: new Date().toISOString(),
+        },
+        {
+          id: 'q2',
+          content: 'Question test 2',
+          upvotes: 0,
+          author: 'Bob',
+          color: '#00FF00',
+          position: { x: 10, y: 20 },
+          size: { width: 120, height: 60 },
+          createdAt: new Date().toISOString(),
+        }
+      ]
+    }
+  ]
+}
+
   
 
 export const eventsSlice = createSlice({

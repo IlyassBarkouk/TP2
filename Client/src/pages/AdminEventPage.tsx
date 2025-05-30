@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import type { RootState } from '../store'
 import { deleteQuestion } from '../slices/eventsSlice'
 import Question from '../components/Question'
+import EventSwitcher from '../components/EventSwitcher'
 
 const AdminEventPage = () => {
     const dispatch = useDispatch()
@@ -21,7 +22,9 @@ const AdminEventPage = () => {
     }
 
     return (
+        
         <div className="min-h-screen bg-blue-50 p-4 sm:p-6">
+            <EventSwitcher basePath="admin" />
             <div className="max-w-4xl mx-auto bg-white shadow-md rounded-2xl p-4 sm:p-6">
                 <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-800 mb-4 sm:mb-6 text-center sm:text-left">
                     Admin : {event.title}
